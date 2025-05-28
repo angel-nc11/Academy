@@ -11,7 +11,7 @@ public class JDBCUtil {
     private static final Properties props = new Properties();
     static {
         try(InputStream in = JDBCUtil.class.getClassLoader()
-                .getResourceAsStream("db.Properties")){
+                .getResourceAsStream("db.properties")){
                 if (in==null){
                     throw new RuntimeException("no se encuentra el archivo");
                 }
